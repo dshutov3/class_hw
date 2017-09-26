@@ -3,12 +3,24 @@ div{
 
 }
 body{
-	background-color: aqua;
+	background-color: black;
 }
 h1{
-	color: purple;
+	color: white;
 	border: 10px solid purple;
 
+}
+h2{
+	color: white;
+}
+h3{
+	color: white;
+}
+h4{
+	color: white;
+}
+hr{
+	color: white;
 }
 p{
 	font-family: sans-serif;
