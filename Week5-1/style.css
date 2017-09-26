@@ -24,10 +24,10 @@ hr{
 }
 p{
 	font-family: sans-serif;
-	color: purple;
+	color: white;
 }
 
 
 table, th, td, ul{
-   border: 1px solid black;
+   border: 1px solid white;
 }
