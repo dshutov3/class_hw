@@ -1,0 +1,21 @@
+div{
+		background-color: yellow;
+
+}
+body{
+	background-color: aqua;
+}
+h1{
+	color: purple;
+	border: 10px solid purple;
+
+}
+p{
+	font-family: sans-serif;
+	color: purple;
+}
+
+
+table, th, td, ul{
+   border: 1px solid black;
+}
