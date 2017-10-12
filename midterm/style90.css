@@ -1,0 +1,51 @@
+/*background image that covers all webpage*/
+html { 
+  background: url(media/90s.jpg) repeat center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+font-family: verdana;
+background-color: white; 
+} 
+img {
+background-color: white; 	
+}
+
+p {
+font-family: verdana;
+background-color: white;
+}
+
+figcaption	{
+font-family: verdana;
+background-color: white;
+}
+
+ul {
+	background-color: cyan;
+}
+
+/*float set for google map */
+.gmap{
+    width:55%;
+    margin-right:2%;
+    float: left;
+}
+/*needed to make google map fully visable*/
+.gmap iframe{
+   width:100%;
+}
+
+/*placing playlist directly next to google map*/
+.playMap {
+    width:42%;
+    float: left;
+}
+/*delete floats to allow for regular formatting once again*/
+.clearfix{
+    clear:both
+}

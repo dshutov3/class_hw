@@ -1,0 +1,29 @@
+html { 
+  background: url(media/light.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*align images to center of screen*/
+div.fill-screen {
+    text-align: center;
+}
+
+/*scale images to 75% of windowed size while remaining original scale*/
+img.make-it-fit {
+    max-width: 75%;
+    max-height: 75%;
+}
+
+/*hide audio controls (which I hate but added for design)*/
+audio { 
+   display:none;
+}
+
+/*google font for footer*/
+p {
+	font-family: 'Orbitron', sans-serif;
+	color: white;
+}

@@ -1,0 +1,70 @@
+body {
+	margin:0;
+	padding:0;
+	font-family: Sans-Serif;
+	line-height: 28px;
+}
+			
+#header {
+	background: red;
+	height: 150px;
+}
+
+
+#header h1 {
+	margin: 0;
+	padding-top: 15px;
+}
+
+/*setting main parameters*/
+main {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	float: left;
+	width: 100%;
+}
+
+/*left side of page*/
+#menu {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	float: left;
+	width: 220px;
+	margin-left: -100%;
+	background: white;
+}
+
+/*footer*/
+#footer {
+	clear: left;
+	width: 100%;
+	background-color: grey;
+	padding: 4px 0;
+}
+
+/*prevents main content from overlapping behind left nav bar*/
+#hideFlow {
+	overflow: hidden;
+}
+				
+#content {
+	margin-left: 220px; 
+}
+
+/* Padding for content */
+.pad {
+	margin: 15px; 
+	margin-top: 0;
+}
+
+/*remove dots*/
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul a {
+	color: orange;
+	text-decoration: none;
+}
