@@ -1,0 +1,64 @@
+.top{
+	background-image: url(leaf_480.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+	font-size: 100px;
+	height: 300px;
+	width: 300px
+	color: white;
+	background-attachment: fixed;
+	opacity: 1.0;
+	transition: width 2s, height 4s, opacity .5s;
+
+}
+.top:hover {
+	height: 400px;
+	opacity: .5;
+}
+p{
+	text-align: center;
+	font-size: 100px;
+	width: 1000px;
+	height: 400px;
+	background-image: url(leaf_480.jpg);
+	background-position: center;
+}
+
+a{
+	color: black;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+a:hover{
+	color: gold;
+	text-decoration: none;	
+	background-image: url(leaf_480.jpg);
+
+}
+a:active{
+	color: green;
+}
+
+.phone {
+     width: 800px;
+     height: 669px;
+     background: url("iphonex.jpg") no-repeat;
+     display: inline-block;
+     transition: width 4s, height 4s, opacity .5s;
+     text-o
+     
+}
+
+.phone:hover {
+        background: url("iphonex2.png") no-repeat;
+        align-content: center;
+		opacity: 1.0;
+    }
+
+.stack {
+	background:	url("specs.jpg"), url("pic1.jpg");
+	background-size: 200px 100px, cover;
+}
+
