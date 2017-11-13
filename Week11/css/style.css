@@ -1,0 +1,37 @@
+.thumbnail { 
+	transition: all .3s ease-in-out; 
+
+
+}
+.thumbnail:hover { 
+	transform: scale(1.1); 
+}
+
+.caption {
+	opacity: .7;
+	transition: opacity .25s;
+}
+
+.caption:hover {
+	opacity: 1;
+}
+
+.container {
+	padding-top: 20px;
+	cursor: url(http://www.cursor.cc/cursor3d/58499.png);
+}
+
+a{
+	text-decoration: none;
+	color: grey;
+}
+
+p{
+	text-align: center;
+	text-decoration: none;
+
+}
+
+body {
+	overflow-x: hidden;
+}
