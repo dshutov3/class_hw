@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>My file structure</title>
+			<link rel="stylesheet" type="text/css" href="style/style.css">
+			<script type="text/javascript" src="scripts/script.js"></script>
+	</head>
+	<body>
+
+	<p>Enter names in the fields:</p>
+
+	<!-- form field to send in your first name and last name variables to an actionpage -->
+	<form id="frm1" method="post" action= "action_page.php") >
+ 		 First name: <input type="text" name="fname"><br>
+ 		 Last name: <input type="text" name="lname"><br><br>
+  		<input type="button" onclick="submitName()" value="Submit Name">
+	</form>
+	<br>
+
+	<hr>
+
+	<div id= "colors">
+		<h2>Change background color</h2>
+		
+		<!-- script to change the colors of the background when clicking a radio button -->
+		<form name="colors" method="post" action="">
+
+			<input type="radio" name="blue" value="radio" onClick="changeColour('b')">blue
+			<br>
+			<input type="radio" name="red" value="radio" onClick="changeColour('r')">red
+			<br>
+			<input type="radio" name="purp" value="radio" onClick="changeColour('p')">
+			purple
+			<br>
+			</form>
+	</div>
+</html>
