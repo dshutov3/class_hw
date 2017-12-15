@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cortical Encoding of Object Semantics</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  
+
+</head>
+
+<body>
+<div class="nightMode">
+
+<!-- top navigation bar menu, stays fixed -->
+  <div id="intro"></div>
+  <br>
+
+	<div class="navbar">  . 
+  <button onClick = "toggleNightMode()" id= togBut align = "right">Toggle Night Mode</button> 
+    <center><h1>Cortical Encoding of Object Semantics</h1></center>
+    <center><h6><i>Daniel D. Leeds <sup> a,b </sup>, David Shutov <sup>a</sup>, John Pyles <sup>b</sup>,
+    Tom Mitchell <sup>b</sup> </i> </h6> </center>
+
+
+  <!--   <div class="container">
+      <div class="row text-center">
+        <div class="col-sm-3"> -->
+		      <a href="#intro">Introduction</a>
+  <!--       </div>
+        <div class="col-sm-3"> -->
+		      <a href="#methods">Methods</a>
+<!--         </div>
+        <div class="col-sm-3"> -->
+		      <a href="#results">Results</a>
+<!--         </div>
+        <div class="col-sm-3"> -->
+		      <a href="#discussion">Discussion</a>
+<!--         </div>
+      </div> -->
+	  <!-- </div> -->
+
+  </div>
+
+
+
+  <div class ="introvid"> </div>
+          <h1 >Introduction </h1>
+                  <div class = "para">The nature of semantic representations in the brain is a broad
+                  question under active investigation. A variety of recent studies have
+                  sought to identify a space of 
+                  likely objects and scenes and accounting for evoked cortical activity
+                  at varying spatial scales. A strong body of evidence supports the
+                  existence of brain regions, or networks of brain regions, specially
+                  tuned for broad semantic classes of stimuli --- such as
+                  faces (Tsao08, Friewald09), scenes (Kravitz11), written
+                  language (Ardila16), and objects (Ungerleider10). A similarly
+                  growing body of evidence supports the connection of localized activity
+                  across the cortex with several sets of semantic properties ---
+                  particularly relating to animacy, humanity, and
+                  size (Kriegeskorte, Huth12, Wehbe14, Huth16). Existing studies
+                  have used multiple techniques to evoke cortical responses, including a
+                  mix of prompted and implicit semantic reasoning for single visual
+                  object viewing (Sudre12), silent movie viewing (Huth12),
+                  printed story reading (Wehbe14), and audio story
+                  listening (Huth16). Measurement of cortical responses similarly
+                  has varied from MEG sources (Sudre12, Wehbe14)  to fMRI using
+                  single-voxels (Huth12, Huth16) or multi-voxel patterns within fixed
+                  region of interest (Kriegeskorte06) and 
+                  moving
+                  searchlights (Wehbe14). Using fMRI searchlight
+                  RSA (Leeds13), we investigate semantic encoding at a range of
+                  spatial scales, evoked separately by visual image and visual word
+                  stimuli. We study 218 simple semantic properties for cortical
+                  encoding, in addition to several composite principal component
+                  properties. Our study is designed with substantial similarities to the
+                  earlier MEG study of (Sudre12), for further comparison of
+                  elicited semantic encodings in the brain across modalities, and across
+                  behavioral tasks. We find substantial similarities in semantic
+                  representations evoked in our and Sudre's designs, driven by both
+                  commonly supported semantic properties such as animacy, as well as
+                  several less explored properties such as ``food.''</div>
+
+
+                  <!-- video iframe -->
+              <center><figure><iframe  src="https://www.youtube.com/embed/0FDtsbLZBuM" frameborder="0" gesture="media" allow="encrypted-media"></iframe><figcaption>A short video describing semantic representations from the Huth team published in the Neuron journal. Our study is similar to theirs, yet uses different methods to extrapolate semantic encodings in the brain.</figcaption></figure></center>
+
+          <div class="para">
+                  The identity of semantic properties relevant to human behavior and to
+                  the brain is unfortunately elusive. RSA neuroimaging studies have
+                  provided some evidence of object groupings in the visually high-level
+                  <a href="#">Required text<img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Inferior_temporal_gyrus_animation_small.gif" /></a>inferotemporal cortex separating natural from artificial and human
+                  from non-human stimuliused fMRI
+                  and PCA to identify common trends in category/semantic labels assigned
+                  to thousands of scenes; they identified components representing
+                  animacy, social factors, naturalness, and a variety of unclear
+                  semantic property combinations. Far more restrained semantic
+                  categories have been used effectively to identify brain regions and
+                  networks seemingly selective for particular groups of stimuli, such as
+                  faces and places used MEG to explore 218 individual semantic properties, and 11
+                  additional ``perceptual'' properties, to predict cortical activity for
+                  sixty single objects; they found cortical links to properties
+                  seemingly related to animacy and naturalness, but also properties
+                  related to size, location, and physical structure. In our
+                    present study, we use previously recorded fMRI data  to revisit the 218 semantic properties of Sudre. Each property is
+                    considered individually as a distinct models of cortical
+                    representation; we also use PCA and clustering to create and compare
+                    composite semantic properties as models of cortical representation.
+                    </div>
+                 <div class="para">
+                  The division of semantic representations across the brain similarly
+                  has proven elusive. The study of cortical activity partitioned between
+                  large anatomical regions identified semantic representations
+                  associated particularly with mid-level vision regions, such as
+                  infero-temporal cortex. These regions
+                  were partially confirmed, but also expanded upon using more
+                  fine-grained analysis with single voxel responses,
+                  indicating a patchwork of semantic representations across the brain.
+                  Multi-voxel searchlight analysis, employing a moving
+                  voxel cube of intermediate spatial range, similarly broadened semantic
+                  representation matches to more anterior regions beyond mid-level
+                  vision. Variance in observed cortical-semantic associations may
+                  illustrate the limitations of analysis at broader or more narrow
+                  spatial scales or may be driven by experimental differences across
+                  experiments. In our present study, we use voxel searchlight
+                    analysis with seven increasing searchlight volumes to explore the
+                    effects of spatial scale on strength of matching strength with
+                  semantic models.
+                  </div>
+                  <div class="para" id = "methods">
+                  Study of cortical semantic representation has been investigated using
+                  stimuli of varying complexity presented through visual and auditory
+                  modalities.  Visual stimuli are most commonly used, employing words
+                  and/or pictures. Semantic representations elicited by words are
+                  expected to be less entangled with visual properties of the
+                  corresponding concepts compared to corresponding picture
+                  presentations.
+                  Among numerous word-based semantics studies, uses
+                  individual real words presented with no clear theme among them, while
+                  uses full paragraphs of a fiction story, Harry Potter,
+                  presented one word at a time with 0.5~s ISI. Crossing into the
+                  auditory realm, collects fMRI data while subjects listen
+                  to hours of stories. In contrast, picture stimuli are often favored
+                  experimentally, as human experience has a strong visual component and
+                  visual prompting elicits stronger cortical responses that may be more
+                  robust to recording noise.
+                  Kriegeskorte08 uses single picture objects presented in
+                  sequence, with no clear theme among them, while uses
+                  video sequences from a movie, played in 1~min and 10~min
+                  blocks. uses a simultaneous display of picture and word
+                  for each of sixty objects, shown across each scanning session with no
+                  unifying theme among objects.
+            </div>
+
+            <h1>Methods</h1> 
+
+            <div class="para">
+                We study fMRI BOLD data recorded by obtained from three
+                subjects recruited from the Carnegie Mellon University Community. The
+                study benefits from a set of object stimuli spanning diverse visual
+                and semantic properties, including cortical responses to picture and
+                word stimuli separately. Leeds used representational
+                similarity analysis to find associations between local voxel
+                population representations and representations for several computer
+                vision models, and one semantic model. We provide a review of the
+                stimulus set and data collection methods below; further details can be
+                found in the original study. In the present work, we
+                investigate semantic properties encoded across the brain, comparing
+                cortical groupings of objects with behavioral groupings based on 218
+                diverse semantic questions previously explored by Sudre.
+                
+                 
+                We build on the semantic investigation by both
+                exploring the cortical match for each proposed semantic
+                question/feature separately as well as investigating potential
+                representative clusters or dimensions.
+                </div>
+                <div class="para">
+                The sixty objects used in and in our present study
+                mirror those used by, with three critical changes for
+                comparison between the two studies. (1) Word and picture
+                representations of each object are displayed in separate trials, for
+                comparison of stimulus type effects. (2) Subjects receive no semantic
+                prompts that may influence object perception.  (3) Cortical response
+                is measured through fMRI rather than MEG, for heightened spatial
+                resolution and to study the role of multi-voxel encodings in larger
+                voxel searchlights. We compare our results to those of Sudre,
+                as well as to those of more recent studies with differing stimuli and
+                semantic features.
+
+            </div>
+
+            <!-- subheading, stim fig 1  -->
+            <center><h3>Semantic Models</h3></center>
+            <center><figure><img src="images/stim.jpg" class = "grow" height="200px" width="500px"><figcaption>Figure 1: The 60 image and word
+            stimuli displayed to subjects</figcaption></figure></center>
+
+            <div class="para" id="results">218 semantic models were defined based on human ratings for each of
+                218 semantic questions obtained Sudre. The ``semantic''
+                questions spanned diverse sensory and conceptual topics,
+                including identity (``Is it an insect?'', ``Is it a tool?''),
+                component identities (``Does it have legs?'', ``Does it have
+                leaves?''), high- and low-level visual properties(``Is it round?'',
+                ``Is it red?''), material/tactile properties (``Is it smooth?'', ``Can
+                it bend?''), size/weight (``Is it bigger than a loaf of bread?'',
+                ``Can you hold it?''), associated actions (``Can it swim?'', ``Can you
+                ride on it?''), scene associations (``Would you find it in a zoo?'',
+                ``Would you find it near a road?''), and emotion (``Is it scary?'',
+                ``Do you love it?'').
+                Using magnetoencepholographic (MEG) recordings, Sudre
+                found these properties have significant prediction for cortical
+                representations for the same sixty objects tested in our present
+                study.
+                These properties also significantly overlap with and expand
+                upon the range of semantic categories covered in other prominent sets
+                such as Sun semantic attributes and constitute a
+                superset of the properties observed to be significant dimensions of
+                cortical semantic representations by Huth.
+
+                Ratings were gathered by Sudre for each of the 218
+                questions for each of 1000 objects, including the sixty objects used
+                in the present neuroimaging study. Using Amazon Turk, subjects were
+                instructed to rate each object on a scale from 1 to 5 (definitely not
+                to definitely yes) for each simple semantic question. The rating for
+                each question--object pair was defined as the median response of
+                responses across subjects. At least three subjects provided a rating
+                for each pair.
+              </div>
+
+              <h1>Results</h1>
+              <div class="para" id="results">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at turpis tincidunt, aliquam dui gravida, dapibus nisi. Cras at aliquet mauris. Sed ut vulputate massa. Proin malesuada congue mattis. Donec ut nisi non mauris aliquet aliquam. Nunc at dignissim urna, ac volutpat arcu. Ut luctus elit vitae erat aliquam fermentum. Nulla sed augue tempus, pretium dolor eget, feugiat dolor.
+              </div>
+
+              <div class="para">
+              Mauris eget volutpat urna. Vestibulum varius maximus metus, quis euismod felis elementum vel. Duis placerat orci dapibus lorem iaculis hendrerit. In convallis, enim eu porta congue, enim justo feugiat est, id commodo tellus quam sit amet sapien. Aliquam volutpat congue convallis. In id leo porttitor, congue turpis non, varius est. Sed ac nisl tempus, tincidunt justo sed, tempor sem. Phasellus augue augue, fringilla sit amet purus semper, consequat rutrum elit. Aliquam at mi sit amet massa aliquet volutpat nec nec ligula. Fusce blandit libero sed condimentum euismod.
+              </div>
+
+              
+              <!-- chart 3 with caption figure -->
+              <center><figure><img src="images/chart3.png" class = "grow" height="300px" width="300px"><figcaption>Figure 3: Comparison of feature–voxel near-top correlations for original 218 features, as well
+              as first six semantic principal components. “Near top” correlation is defined as the tenth
+              highest feature–voxel sphere correlation measured across all voxel spheres for the given subject,
+              stimulus type, and sphere size. Average near top correlation is plotted by blue line, computed
+              across seven radius sphere settings, two stimulus settings (picture or word), and three subjects.
+              Standard deviation across the same 7 × 2 × 3 = 42 settings shown by red dots. The first 218
+              features are sorted by average near top correlation. The first six PCs shown in order as
+              features 219 through 224, immediately following the original 218 features.</figcaption></figure></center>
+
+              <div class="para">
+              Integer pulvinar nunc eu orci fermentum feugiat. Nulla sed augue non enim varius posuere ut at arcu. Etiam aliquam finibus faucibus. In porta ipsum nisl, vel condimentum arcu viverra ac. Mauris tempor enim ipsum, quis hendrerit tortor ultrices at. Nullam eleifend quis eros sit amet iaculis. Pellentesque id metus gravida, facilisis massa at, pellentesque nunc. Quisque facilisis dapibus mi vel molestie. Sed pharetra gravida tristique. Morbi iaculis ante id neque consequat faucibus. Fusce dictum enim eu lacus condimentum sodales. Duis lobortis placerat justo id finibus.
+              </div>
+
+              <div class="para" id="discussion">
+              Etiam sodales orci nisl, a hendrerit felis molestie ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vulputate purus eu dolor consectetur pulvinar. Quisque quis ipsum semper enim euismod viverra sagittis at magna. Vivamus eleifend nisi purus, et gravida augue luctus at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, dui et accumsan tempor, metus neque lacinia orci, ut condimentum est metus sed orci. Morbi feugiat tincidunt elit, id consequat nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante turpis, venenatis sit amet scelerisque vel, rutrum eget ipsum. Aliquam placerat ex non lorem blandit, ut pretium nisl vehicula. Etiam vitae mauris tortor.
+              </div>
+
+              <div class="para" >
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi hendrerit, neque in imperdiet molestie, leo nisi pretium sem, sit amet ultricies nisl augue ac libero. Vivamus in justo at mauris elementum sollicitudin. Phasellus consectetur urna lacinia mi vehicula, et venenatis purus lobortis. Curabitur at facilisis eros, posuere tempus tortor. Duis ac venenatis mauris. Suspendisse blandit in ligula vel euismod. Morbi ut nisl mollis, luctus erat sagittis, dignissim mi. Suspendisse eleifend nulla ac pretium varius. Integer sit amet urna erat. Maecenas fermentum vestibulum ipsum nec sagittis. Duis pharetra massa sit amet turpis consectetur, et mattis tortor efficitur. Praesent dictum ullamcorper blandit.
+              </div>
+
+              <h1>Discussion</h1>
+              <div class="para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at turpis tincidunt, aliquam dui gravida, dapibus nisi. Cras at aliquet mauris. Sed ut vulputate massa. Proin malesuada congue mattis. Donec ut nisi non mauris aliquet aliquam. Nunc at dignissim urna, ac volutpat arcu. Ut luctus elit vitae erat aliquam fermentum. Nulla sed augue tempus, pretium dolor eget, feugiat dolor.
+              </div>
+
+              <!-- pc group figure -->
+              <center><figure><img src="images/pcgroup.png" class = "grow" height="250px" width="400px"><figcaption>Figure 5Largest clusters of semantic questions found by agglomerative hierarchical clustering through tree with average linkage and 0.3 Spearman correlation threshold. For each
+              cluster, the total number of questions is shown in parentheses, we suggest a unifying theme
+              for the questions where possible, and a subset of questions are shown in the box below. (c)
+              Power of first n principal components in describing 1000 object subject ratings. (d) Most
+              strongly weighted semantic questions for first six components; a unifying theme is suggested
+              for components 2, 3, and 6.</figcaption></figure></center>
+
+
+              <div class="para">
+              Mauris eget volutpat urna. Vestibulum varius maximus metus, quis euismod felis elementum vel. Duis placerat orci dapibus lorem iaculis hendrerit. In convallis, enim eu porta congue, enim justo feugiat est, id commodo tellus quam sit amet sapien. Aliquam volutpat congue convallis. In id leo porttitor, congue turpis non, varius est. Sed ac nisl tempus, tincidunt justo sed, tempor sem. Phasellus augue augue, fringilla sit amet purus semper, consequat rutrum elit. Aliquam at mi sit amet massa aliquet volutpat nec nec ligula. Fusce blandit libero sed condimentum euismod.
+              </div>
+
+              <div class="para">
+              Integer pulvinar nunc eu orci fermentum feugiat. Nulla sed augue non enim varius posuere ut at arcu. Etiam aliquam finibus faucibus. In porta ipsum nisl, vel condimentum arcu viverra ac. Mauris tempor enim ipsum, quis hendrerit tortor ultrices at. Nullam eleifend quis eros sit amet iaculis. Pellentesque id metus gravida, facilisis massa at, pellentesque nunc. Quisque facilisis dapibus mi vel molestie. Sed pharetra gravida tristique. Morbi iaculis ante id neque consequat faucibus. Fusce dictum enim eu lacus condimentum sodales. Duis lobortis placerat justo id finibus.
+              </div>
+
+              <div class="para">
+              Etiam sodales orci nisl, a hendrerit felis molestie ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vulputate purus eu dolor consectetur pulvinar. Quisque quis ipsum semper enim euismod viverra sagittis at magna. Vivamus eleifend nisi purus, et gravida augue luctus at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium, dui et accumsan tempor, metus neque lacinia orci, ut condimentum est metus sed orci. Morbi feugiat tincidunt elit, id consequat nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ante turpis, venenatis sit amet scelerisque vel, rutrum eget ipsum. Aliquam placerat ex non lorem blandit, ut pretium nisl vehicula. Etiam vitae mauris tortor.
+              </div>
+
+              <div class="para">
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi hendrerit, neque in imperdiet molestie, leo nisi pretium sem, sit amet ultricies nisl augue ac libero. Vivamus in justo at mauris elementum sollicitudin. Phasellus consectetur urna lacinia mi vehicula, et venenatis purus lobortis. Curabitur at facilisis eros, posuere tempus tortor. Duis ac venenatis mauris. Suspendisse blandit in ligula vel euismod. Morbi ut nisl mollis, luctus erat sagittis, dignissim mi. Suspendisse eleifend nulla ac pretium varius. Integer sit amet urna erat. Maecenas fermentum vestibulum ipsum nec sagittis. Duis pharetra massa sit amet turpis consectetur, et mattis tortor efficitur. Praesent dictum ullamcorper blandit.
+              </div>
+
+              <br>
+              <br>
+
+
+                <!-- footer -->
+        <div class="footer" id="footer">
+            <center><sup>a</sup><i>Fordham University, 441 East Fordham Road, Bronx, NY, USA</i></center>
+            <center><sup>b</sup><i>Carnegie Mellon University 5000 Forbes Avenue, Pittsburgh, PA, US</i></center>
+             <br>
+            <center>© David Shutov</center>
+        </div>
+</div>
+<!-- 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+ -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script type="text/javascript">  // ===== Smooth Scroll   ==== by w3schools https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll was used to create this function 
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') ==
+ this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 500);
+              return false;
+            }
+          }
+        });
+      });
+
+
+    // <!-- script for toggle night mode -->
+
+    function toggleNightMode() {
+    var color = document.getElementByClassName('para').style.color;
+    
+    var backgroundColor = document.getElementByClassName('nightMode').style.backgroundColor;
+  
+    
+    if (color == "black" && backgroundColor == "white") {
+        document.getElementByClassName('para').style.color="white";
+        document.getElementByClassName('nightMode').style.backgroundColor="black";
+
+        
+    } else {
+        document.getElementByClassName('para').style.color="black";
+        document.getElementByClassName('nightMode').style.backgroundColor="white";
+    }
+ }
+</script>
+
+</body>
+</html>

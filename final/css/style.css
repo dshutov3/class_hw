@@ -1,0 +1,211 @@
+
+.para{
+    font-family: Georgia;
+    text-indent: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 0px;
+    color: black;
+}
+
+/*nightmode button*/
+#togBut {
+
+  position: absolute;
+  border: 2px 
+  border-radius: 25px;
+  background: #8296DF;
+  padding: 5px;  
+
+}
+
+#togBut:hover {
+  background: black;
+  color: white;
+  
+  
+}
+
+/* The navigation bar */
+.navbar{
+    overflow: hidden;
+    background-color: #063856;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    padding-bottom: 10px;
+}
+
+.navbar a{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 25%;
+     
+        transition: all .4s ease-in;
+}
+
+
+/* Links inside the navbar */
+a {
+    text-decoration: none;
+    color: #009fb7;
+}
+
+.navbar a:hover{
+    -webkit-stroke width = 6px;
+    -webkit-stroke-color: #009fb7;
+    -webkit-fill-color: #009fb7;
+    text-shadow: 1px 0px 20px #FED766;
+}
+
+/*within para div, on hover link show image*/
+.para a img {
+     display:none; 
+     position: relative;
+ }
+ .para a:hover img { 
+    border: black;
+    position: absolute;
+    display:block; 
+}
+
+
+
+/*header colors*/
+h1 {
+    font-family: Big Caslon;
+    color: #009fb7;
+    margin = 0;
+    padding-left: 14px;
+    padding-right: 14px;
+        transition: all .4s ease-in;
+
+}
+
+/*subheaders*/
+h3 {
+    font-family: Big Caslon;
+    color: #009fb7;
+    margin = 0;
+    padding = 0;
+        transition: all .4s ease-in;
+
+}
+
+/*italics*/
+h6 {
+    font-family: Big Caslon;
+    color: #009fb7;
+    padding-bottom: -15px;
+    margin = 0;
+    padding = 0;
+
+}
+
+/*link colors*/
+a {
+    color: #009fb7;
+}
+
+/*1st paragraph vid*/
+.introvid {
+    margin-top: 150px;
+}
+
+
+
+.introvid iframe {
+    height: 400px;
+    width: 500px;
+}
+
+/*figure captions*/
+figcaption {
+    color: #808080;
+    font-family: Georgia;
+    width: 400px;
+    font-size: 12px;
+}
+
+
+/*tooltip object, allows to hover over a word and show a boxs*/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    font-family: Georgia;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    font-family: Georgia;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*footer css*/
+.footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Georgia;
+    font-size: 13px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #063856;
+    color: white;
+    text-align: center;
+}
+
+/*grow image on hover*/
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(2.0); }
+
+
+
+
+
+
+
+
+
+
+
